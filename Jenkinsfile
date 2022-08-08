@@ -12,7 +12,6 @@ pipeline {
                 sshagent(['Nodejs']) {
                     sh "scp -r -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/nodejs_cicd/* ubuntu@65.1.110.216:/var/www/html/node-js-sample"
                     sh "ssh ubuntu@65.1.110.216 /var/www/html/node-js-sample/npm.sh"
-                    sh "ssh ubuntu@65.1.110.216 sudo systemctl restart node.service"
                 }
             }
         }  
