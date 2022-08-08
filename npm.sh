@@ -4,4 +4,4 @@ cd /var/www/html/
 
 sudo npm install
 
-sudo systemctl restart cms.service
+sudo pm2 restart cms
