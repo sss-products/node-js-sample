@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /var/www/html/node-js-sample/
+cd /var/www/html/
 
 sudo npm install
 
